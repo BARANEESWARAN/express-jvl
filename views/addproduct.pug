@@ -1,0 +1,9 @@
+extends layout.pug 
+
+block content
+ body
+    main(class="main")
+        h1 Store Page
+        form(action="/admin/store", method="POST")
+          input(name="title", type="text")
+          button(type="submit") Submit

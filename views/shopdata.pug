@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+
+  main(class="main")
+    h1 #{shopname} Products
+    p List of all products
+
+    if products.length > 0
+      ul 
+        each product in products 
+          li 
+            p name: #{product.name}
+            p price: #{product.price}
+    else
+      h3 No data

@@ -1,0 +1,16 @@
+
+    <main class="main">
+<h1>Products HBS</h1>
+<p>List of all products</p>
+{{#if productExists}}
+<ul>
+{{#each products}}
+<li>{{this.name}}</li>
+{{/each}}
+{{else}}
+<p>No Data Hbs</p>
+</ul>
+{{/if}}
+</main>
+</body>
+</html>
